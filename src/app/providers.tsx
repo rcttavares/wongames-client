@@ -1,3 +1,5 @@
+'use client'
+
 import GlobalStyles from '@/styles/global'
 import { PropsWithChildren } from 'react'
 import { ThemeProvider } from 'styled-components'
