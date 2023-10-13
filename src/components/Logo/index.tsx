@@ -3,15 +3,10 @@ import * as S from './styles'
 export type LogoProps = {
   color?: 'white' | 'black'
   size?: 'normal' | 'large'
-  hide?: boolean
 }
 
-const Logo = ({
-  color = 'white',
-  size = 'normal',
-  hide = false
-}: LogoProps) => (
-  <S.Wrapper color={color} size={size} hide={hide}>
+const Logo = ({ color = 'white', size = 'normal' }: LogoProps) => (
+  <S.Wrapper color={color} size={size}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
