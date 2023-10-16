@@ -36,4 +36,14 @@ describe('<Logo />', () => {
       width: '20rem'
     })
   })
+
+  it('should render a bigger logo without text if hide', () => {
+    render(<Logo hide />)
+
+    expect(screen.getByLabelText(/Won Games/i).parentElement).toHaveStyleRule(
+      'width',
+      '5.8rem',
+      { media: '(max-width:  768px)' }
+    )
+  })
 })
