@@ -1,5 +1,5 @@
+import { Meta, StoryObj } from '@storybook/react'
 import Logo, { LogoProps } from '.'
-import { Meta, StoryObj } from '@storybook/nextjs'
 
 export default {
   title: 'Logo',
