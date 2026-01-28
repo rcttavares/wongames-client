@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
-import { LogoProps } from '.'
 import media from 'styled-media-query'
+import { LogoProps } from '.'
 
 const wrapperModifiers = {
   normal: () => css`
@@ -31,7 +31,9 @@ const wrapperModifiers = {
   `
 }
 
-export const Wrapper = styled.div<LogoProps>`
+export const Wrapper = styled.div.withConfig({
+  shouldForwardProp: (prop) => !['color', 'size', 'hide'].includes(prop)
+})<LogoProps>`
   ${({ theme, color, size, hide }) => css`
     color: ${theme.colors[color!]};
 
