@@ -1,8 +1,8 @@
-const nextCoreWebVitals = require('eslint-config-next/core-web-vitals')
-const storybook = require('eslint-plugin-storybook')
-const prettier = require('eslint-config-prettier')
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals'
+import storybook from 'eslint-plugin-storybook'
+import prettier from 'eslint-config-prettier'
 
-module.exports = [
+export default [
   {
     ignores: ['generators/**', 'storybook-static/**']
   },
